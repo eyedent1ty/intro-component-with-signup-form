@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.red {
+  color: hsl(0deg, 100%, 74%);
+}
+
+.bg-blue {
+  background-color: hsl(248deg, 32%, 49%);
+}
+
+.bg-white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.small {
+  font-size: 0.7rem;
+}
+
+.large {
+  font-size: 1.7rem;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: hsl(0deg, 100%, 74%);
+  margin-bottom: 20px;
+}
+
+body {
+  font-size: 16px;
+  font-family: Poppins;
+  height: 100vh;
+  background: center/cover no-repeat url("../images/bg-intro-mobile.png") hsl(0deg, 100%, 74%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+  height: 60px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(249deg, 10%, 26%);
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.btn {
+  height: 60px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  background-color: hsl(154deg, 59%, 51%);
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .container article:first-child {
+    text-align: left;
+  }
+  .container article:first-child .large {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .container article:first-child p {
+    padding: 0;
+  }
+  .container article:last-child section:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .container article:last-child section:last-child {
+    padding: 30px;
+  }
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// Colors
+// Primary
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+// Accent
+$blue: hsl(248, 32%, 49%);
+
+// Neutral
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+
+// Color
+.white {
+    color: hsl(0, 0, 100%);
+}
+
+.red {
+    color: $red;
+}
+
+// Background-color
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-white {
+    background-color: hsl(0, 0, 100%);
+}
+
+// Font size
+
+.small {
+    font-size: 0.7rem;
+}
+
+.large {
+    font-size: 1.7rem;
+}
+
+// Font weight
+
+.normal {
+    font-weight: normal;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+// margin
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+// padding
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-0 {
+    padding-top: 0px;
+}
+
+// Text-align
+.center {
+    text-align: center;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+// UNIVERSAL
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: $red;
+    margin-bottom: 20px;
+}
+
+body {
+    font-size: 16px;
+    font-family: Poppins;
+    height: 100vh;
+    background: center / cover no-repeat url('../images/bg-intro-mobile.png')
+        $red;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: $dark-blue;
+    border: 1px solid $grayish-blue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.btn {
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: $green;
+    color: hsl(0, 0, 100%);
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        article:first-child {
+            text-align: left;
+
+            .large {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                padding: 0;
+            }
+        }
+
+        article:last-child {
+            section:first-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+            }
+
+            section:last-child {
+                padding: 30px;
+            }
+        }
+    }
+
+    body {
+        background-image: url('../images/bg-intro-desktop.png');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intro Component with signup form</title>
+        <link rel="stylesheet" href="dist/style.css" />
+        <link rel="icon" href="images/favicon-32x32.png" />
+    </head>
+    <body>
+        <main class="container">
+            <article class="white center">
+                <p class="large bold p-40 pb-20">
+                    Learn to code by watching others
+                </p>
+                <p class="p-10 pt-0 pb-40">
+                    See how experienced developers solve problems in real-time.
+                    Watching scripted tutorials is great, but understanding how
+                    developers think is invaluable
+                </p>
+            </article>
+            <article>
+                <section class="card white center bg-blue mb-30">
+                    <p><span class="bold">Try it free 7 days</span> then</p>
+                    <p>$20/mo. thereafter</p>
+                </section>
+                <section class="card bg-white">
+                    <form class="signup-form">
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder="First Name"
+                            name="firstName"
+                        />
+                        <input
+                            class="input"
+                            type="text"
+                            placeholder="Last Name"
+                            name="lastName"
+                        />
+                        <input
+                            class="input"
+                            type="email"
+                            placeholder="Email Address"
+                            name="email"
+                        />
+                        <input
+                            class="input"
+                            type="password"
+                            placeholder="Password"
+                            name="password"
+                        />
+                        <button class="btn mb-20" type="submit">
+                            Claim your free trial
+                        </button>
+                    </form>
+                    <div class="error-message hide">
+                        <img src="images/icon-error.svg" width="24px" />
+                        Invalid input!
+                    </div>
+                    <div class="small center">
+                        <p>By clicking the button, you are agreeing to</p>
+                        <p>
+                            our <span class="bold red">Terms and Services</span>
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
