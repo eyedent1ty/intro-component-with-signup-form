@@ -11,7 +11,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 ### Links
 
 - Solution URL: [Repository](https://github.com/eyedent1ty/intro-component-with-signup-form)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Live Site URL: [Live](https://eyedent1ty-intro-component-signup-form.netlify.app/)
 
 ### Built with
 
